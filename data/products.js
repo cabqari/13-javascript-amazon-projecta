@@ -656,5 +656,33 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "bc2747e9-5323-403f-b7vf-57fde044a954",
+    image: "images/products/backpack.jpg",
+    name: "backpack amazing product",
+    rating: {
+      stars: 5,
+      count: 40000
+    },
+    priceCents: 25000,
+    keywords: [
+      "backpack",
+      "shandad"
+    ]
+
+  },
+  {
+    id: "bc2474e9-5323-4p3f-b4dlff-57deffj358f",
+    image: "images/products/umbrella.jpg",
+    name: "umbrella for outside",
+    rating: {
+      stars: 3.5,
+      count: 50500
+    },
+    priceCents: 4530,
+    keywords: [
+      "umbrella"
+    ]
   }
 ];
