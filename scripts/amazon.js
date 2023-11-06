@@ -57,7 +57,7 @@ products.forEach((product) => {
 
 document.querySelector('.js-products-grid')
   .innerHTML = productsHTML;
-  
+
   let timeoutId;
 
   document.querySelectorAll('.js-add-to-cart')
@@ -109,3 +109,5 @@ document.querySelector('.js-products-grid')
           .innerHTML = cartQuantity;
       });
     });
+
+    // All thanks to our teacher SuperSimple.Dev
