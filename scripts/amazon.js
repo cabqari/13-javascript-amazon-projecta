@@ -61,13 +61,14 @@ document.querySelector('.js-products-grid')
   document.querySelectorAll('.js-add-to-cart')
     .forEach((button) => {
       button.addEventListener('click', () => {
-        const productId = button.dataset.productId;
+        // destructing property
+        const { productId } = button.dataset;
 
         let matchingItem;
         
 
         const selectElement = document.querySelector(`.js-quantity-selector-${productId}`);
-        const selectedValue = Number(selectElement.value);
+        const quantity = Number(selectElement.value);
         
         cart.forEach((item) => {
           if (productId === item.productId) {
@@ -76,11 +77,12 @@ document.querySelector('.js-products-grid')
         });
 
         if (matchingItem) {
-          matchingItem.quantity += selectedValue;
+          matchingItem.quantity += quantity;
         } else {
           cart.push({
-            productId: productId,
-            quantity: selectedValue
+            // shorthand property
+            productId,
+            quantity,
           })
         };
 
